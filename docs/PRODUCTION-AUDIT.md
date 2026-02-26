@@ -29,7 +29,7 @@
 
 **Files affected:**
 - `index.html` (header, mobile nav, CTAs, footer, floating button)
-- `pricing.html`, `channel-list.html`, `contact.html`, `blog.html`, `faq.html`
+- `pricing.html`, `channel-list.html`, `contact.html`, `blog.html`, `products.html`
 
 ### 1.2 Social Media Links
 **Location:** Footer on all pages  
@@ -137,7 +137,7 @@ And ensure `<main id="main">` exists.
 | index.html | ✅ | ✅ | Hero, Why Choose, Stats, Pricing, Testimonials, CTA |
 | pricing.html | ✅ | ✅ | Hero, Plans, Features, FAQ, CTA |
 | channel-list.html | ✅ | ✅ | Hero, Channel Grid, Stats, CTA |
-| faq.html (Products) | ✅ | ✅ | Hero, Product Card, Features, Devices, CTA |
+| products.html | ✅ | ✅ | Hero, Product Card, Features, Devices, CTA |
 | blog.html | ✅ | ✅ | Hero, Posts, CTA |
 | contact.html | ✅ | ✅ | Hero, Form, WhatsApp CTA |
 

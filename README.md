@@ -9,7 +9,7 @@ A multi-page IPTV service website built with vanilla HTML, CSS, and JavaScript. 
 | Home | `index.html` | Hero, features, movies, stats, pricing, testimonials |
 | Pricing | `pricing.html` | Subscription plans |
 | Channel List | `channel-list.html` | Channel categories |
-| FAQ | `faq.html` | Frequently asked questions |
+| Products | `products.html` | IPTV service & hardware |
 | Blog | `blog.html` | Articles and guides |
 | Contact | `contact.html` | Contact form and WhatsApp |
 
@@ -24,7 +24,7 @@ A multi-page IPTV service website built with vanilla HTML, CSS, and JavaScript. 
 ├── index.html          # Home
 ├── pricing.html
 ├── channel-list.html
-├── faq.html
+├── products.html
 ├── blog.html
 ├── contact.html
 ├── css/styles.css      # All styles

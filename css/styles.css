@@ -665,6 +665,8 @@ ul { list-style: none; }
   position: relative;
   z-index: 10;
   max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page-hero__badge {
@@ -722,12 +724,15 @@ ul { list-style: none; }
   line-height: 1.7;
   margin-bottom: 32px;
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Hero Highlights (Pricing Page) */
 .page-hero__highlights {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -749,12 +754,13 @@ ul { list-style: none; }
 .page-hero__stats {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
   margin-top: 8px;
 }
 
 .hero-stat {
-  text-align: left;
+  text-align: center;
 }
 
 .hero-stat__number {
@@ -1680,10 +1686,10 @@ ul { list-style: none; }
 /* WhatsApp Float - Premium */
 .whatsapp-float {
   position: fixed;
-  bottom: 32px;
-  right: 32px;
-  width: 68px;
-  height: 68px;
+  bottom: 24px;
+  right: 24px;
+  width: 58px;
+  height: 58px;
   background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
   color: var(--white);
   border-radius: 50%;
@@ -1988,6 +1994,13 @@ ul { list-style: none; }
 }
 
 /* Contact Form */
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gray-dark);
+  margin-bottom: 8px;
+}
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -2104,21 +2117,28 @@ ul { list-style: none; }
 .hero-slide__content {
   position: absolute;
   left: 0;
-  top: 140px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
-  max-width: 600px;
-  padding: 0 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
   z-index: 20;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @keyframes slideInFade {
   from {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateY(-50%) scale(0.98);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(-50%) scale(1);
   }
 }
 
@@ -2128,6 +2148,7 @@ ul { list-style: none; }
 
 .hero-slide__category {
   display: flex;
+  justify-content: center;
   gap: 12px;
   margin-bottom: 20px;
   flex-wrap: wrap;
@@ -2177,26 +2198,28 @@ ul { list-style: none; }
 }
 
 .hero-slide__title {
-  font-size: clamp(42px, 6vw, 72px);
-  font-weight: 900;
+  font-size: clamp(32px, 4.5vw, 56px);
+  font-weight: 800;
   color: white;
-  line-height: 1.05;
-  margin-bottom: 20px;
+  line-height: 1.2;
+  margin-bottom: 16px;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  letter-spacing: -2px;
+  letter-spacing: -1px;
+  white-space: nowrap;
 }
 
 .hero-slide__desc {
-  font-size: 18px;
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
-  margin-bottom: 24px;
-  max-width: 550px;
+  margin-bottom: 28px;
+  max-width: 700px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-slide__meta {
   display: flex;
+  justify-content: center;
   gap: 24px;
   margin-bottom: 32px;
   flex-wrap: wrap;
@@ -2217,6 +2240,7 @@ ul { list-style: none; }
 
 .hero-slide__buttons {
   display: flex;
+  justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
   align-items: center;
@@ -2393,24 +2417,27 @@ ul { list-style: none; }
 @media (max-width: 1199px) {
   .hero-slide__content {
     padding: 0 40px;
-    max-width: 500px;
-    top: 120px;
+    max-width: 900px;
   }
   .hero-stat-bar {
     gap: 48px;
   }
   .hero-slide__title {
-    font-size: clamp(36px, 5vw, 56px);
+    font-size: clamp(28px, 4vw, 48px);
+    white-space: normal;
   }
   .hero-slide__desc {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 991px) {
   .hero-slide__content {
-    max-width: 450px;
+    max-width: 700px;
     padding: 0 30px;
+  }
+  .hero-slide__title {
+    font-size: clamp(26px, 5vw, 40px);
   }
   .hero-slide__buttons .btn {
     padding: 14px 24px;
@@ -2435,15 +2462,15 @@ ul { list-style: none; }
   .hero-slide__content {
     padding: 0 20px;
     max-width: 100%;
-    top: 100px;
   }
   .hero-slide__title {
-    font-size: clamp(28px, 7vw, 42px);
-    letter-spacing: -1px;
+    font-size: clamp(24px, 6vw, 36px);
+    letter-spacing: -0.5px;
+    white-space: normal;
   }
   .hero-slide__desc {
-    font-size: 14px;
-    margin-bottom: 16px;
+    font-size: 15px;
+    margin-bottom: 20px;
   }
   .hero-slide__meta {
     gap: 12px;
@@ -2510,6 +2537,7 @@ ul { list-style: none; }
 }
 .lifestyle-content {
   padding-right: 40px;
+  text-align: center;
 }
 .lifestyle-title {
   font-size: clamp(32px, 4vw, 48px);
@@ -2532,6 +2560,9 @@ ul { list-style: none; }
 }
 .lifestyle-features {
   margin-bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .lifestyle-features li {
   display: flex;
@@ -2541,6 +2572,7 @@ ul { list-style: none; }
   font-size: 16px;
   font-weight: 500;
   color: var(--gray-dark);
+  max-width: 320px;
 }
 .lifestyle-features li svg {
   color: var(--green);
